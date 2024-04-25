@@ -1,0 +1,282 @@
+/* General styles */
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  background-color: #FAF8F4; 
+  color: black;
+}
+
+header, h1, h2, h3, p, .nav a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h3 {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+.comment-form {
+  margin-left: 20px;
+}
+
+.comment-card-block {
+  background-color: #fff;
+  margin-left: 100px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: calc(100% - 200px); /* Responsive width adjustment */
+}
+
+.comment-form {
+  margin-left: 20px;
+  max-width: 600px; /* Sets a maximum width for the form */
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"] {
+  width: 100%; /* Makes the input fields take the full width of the form */
+  padding: 10px; /* Adds some padding inside the input fields */
+  margin-bottom: 10px; /* Adds space between the input fields */
+  border: 1px solid #ccc; /* Adds a subtle border */
+  border-radius: 15px; /* Rounds the borders */
+  box-sizing: border-box; /* Ensures padding does not affect the width */
+}
+
+.comment-form button {
+  width: 100%; /* Makes the button take the full width of the form */
+  padding: 10px;
+  background-color: #4CAF50; /* Green background for visibility */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 15px; /* Rounded borders for the button */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.comment-form button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+
+
+.new-comment-block {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.new-comment-block input[type="text"], .new-comment-block input[type="email"] {
+  width: 80%; /* Adjust width as needed */
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-comment-block button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.new-comment-block button:hover {
+  background-color: #45a049;
+}
+
+.new-comment-block button.delete-button {
+  background-color: #f44336;
+}
+
+.new-comment-block button.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.header {
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-image {
+  margin: 20px auto;  /* Centers the image horizontally with some margin */
+  display: flex;
+  justify-content: center;  /* Centers content inside the div */
+  max-width: 50%;  /* Limits max width to half of its parent container */
+}
+
+.footer-image img {
+  width: 100%;  /* Makes the image responsive */
+  height: auto;  /* Maintains aspect ratio */
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li, p2 {
+  padding: 0;
+  text-align: left;
+}
+
+.nav a {
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.img2 {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 1vw + 1rem, 2.5rem);
+  text-align: center;
+  padding-top: 64px;
+}
+
+h2 {
+  font-size: clamp(1rem, 1vw + 1rem, 2.5rem);
+  text-align: center;
+}
+
+p {
+  font-size: clamp(1rem, 0.5vw + 0.5rem, 1.5rem);
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+p2 {
+  font-size: clamp(0.6rem, 1vw + 0.5rem, 2rem);
+  text-align: left;
+}
+
+.content {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.service {
+  flex-basis: calc(33.333% - 20px);
+  margin: 10px;
+  color: black;
+  text-align: left;
+}
+
+.service img {
+  width: 420px;
+  height: 320px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+  background-color: #f2f2f3;
+}
+
+/* Comments display styles */
+.comments-display {
+  margin: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.comment-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.comment-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.comment-email {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments-container {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for the comments section */
+}
+
+.comment-text, .comment-email {
+  padding: 5px;
+  font-size: 16px; /* Ensure text is legible */
+}
+
+.comment {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.no-data {
+  color: red;
+  font-size: 16px;
+}
